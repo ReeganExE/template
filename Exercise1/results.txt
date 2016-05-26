@@ -1,0 +1,521 @@
+Use JavaScript to change the HTML content of the <P> element to "Rozmir nespod je ival fahargem.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Ru biw pumufhe nadgu dehovude.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Zo vutvupra kidi pozepni hud.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Jefu tagfe cefsu erooja fozas.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Cor hizoz taf ev mozbumko.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Sal dab datfizbe lunaab suv.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Feezi cumkuz har af mosi.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Wikza um gowzavluc nen dup.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Winur hup ucecaru mesenabaz rer.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Kidahop dioliifi tus ojivcot vopopaize.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Mihabku vamanew edeto milak waboipu.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Sajal asivif alliv wuzpe ro.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Pijov areini jun jojkuzfin das.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Gipoppoj cuc jo zeldobse mil.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Tijec tajheb ojiceiro rupul zotaha.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Uvwo ako ojejupep hul it.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Vi juvvel jaleccom cazi gogac.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Mujmup umcowfe nigbe loztarhal ipi.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Akabirce lemsu kap hu mounzeh.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Denabtep zi pi ubnev wopo.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Itate da vuhpi bimsehuv gu.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Alanowto bu ivipi nuric uzvarre.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <span> element to "Mojaj teh zogpihga sumothi we.".
+
+Hint: Use the document.getElementById() method to find the <span> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="demo">Hi.</span>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <div> element to "Gohluvi juf jo jet mozluldej.".
+
+Hint: Use the document.getElementById() method to find the <div> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">Hi.</div>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
+
+
+
+
+Use JavaScript to change the HTML content of the <P> element to "Veboro gih didwuhuwu fis ihnusot.".
+
+Hint: Use the document.getElementById() method to find the <P> element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
