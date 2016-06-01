@@ -66,7 +66,7 @@
                 iElm.click(e => {
                     e.preventDefault();
                     if ($rootScope.checked) {
-                        alert('You has submitted');
+                        console.log('You has submitted');
                     } else {
                         $rootScope.checked = true;
                         $rootScope.answer = iElm.attr('href');
