@@ -75,7 +75,20 @@
                 });
             }
         };
-    }]);
+    }])
+
+    .run(function() {
+        if (window.parent !== window) {
+            channel = Channel.build({
+                window: window.parent,
+                origin: "*",
+                scope: "JSInput"
+            });
+
+            channel.bind("checkAnswer", checkAnswer);
+            channel.bind("emptyFn", emptyFn);
+        }
+    });
 
     /**
      * Keep the final answer.
