@@ -65,13 +65,8 @@
             link: function($scope, iElm, iAttrs, controller) {
                 iElm.click(e => {
                     e.preventDefault();
-                    if ($rootScope.checked) {
-                        console.log('You has submitted');
-                    } else {
-                        $rootScope.checked = true;
-                        $rootScope.answer = iElm.attr('href');
-                        controller.onAnswer(iElm, $rootScope.answer === $rootScope.question.answer);
-                    }
+                    $rootScope.answer = iElm.attr('href');
+                    controller.onAnswer(iElm, $rootScope.answer === $rootScope.question.answer);
                 });
             }
         };
