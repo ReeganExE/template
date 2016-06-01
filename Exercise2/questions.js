@@ -110,7 +110,7 @@
  * Returns the user's answer.
  */
 function checkAnswer() {
-    return document.answered;
+    return document.answered || false;
 }
 
 
