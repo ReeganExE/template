@@ -83,7 +83,7 @@
     function AnswerController() {
         var vm = this;
         vm.onAnswer = function(el, correct) {
-            console(correct);
+            console.log(correct);
             document.answered = correct;
         }
     }
