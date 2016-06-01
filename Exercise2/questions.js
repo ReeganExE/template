@@ -85,7 +85,7 @@
                 scope: "JSInput"
             });
 
-            channel.bind("checkAnswer", checkAnswer);
+            channel.bind("getGrade", checkAnswer);
             channel.bind("emptyFn", emptyFn);
         }
     });
