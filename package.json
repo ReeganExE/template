@@ -1,0 +1,19 @@
+{
+  "name": "gcs-template",
+  "version": "1.0.0",
+  "description": "http://olado.github.io/doT/index.html\r https://shancarter.github.io/mr-data-converter/\r http://chancejs.com/#sentence",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReeganExE/template.git"
+  },
+  "author": "Ninh Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReeganExE/template/issues"
+  },
+  "homepage": "https://github.com/ReeganExE/template#readme"
+}
