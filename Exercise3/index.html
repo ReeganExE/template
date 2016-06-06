@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML</title>
+    <link rel="stylesheet" href="http://prismjs.com/themes/prism-okaidia.css" data-noprefix />
+    <link rel="stylesheet" href="style.css" data-noprefix />
+</head>
+
+<body ng-app="questions">
+    <section>
+        <div>
+            <pre>
+<code class="language-markup" code-target>
+  &lt;div ng-app=&quot;myApp&quot;&gt;...&lt;/div&gt;
+
+  &lt;script&gt;
+
+  var app = angular.module(&quot;myApp&quot;, []);
+
+  &lt;/script&gt;</code>
+            </pre>
+        </div>
+    </section>
+    <div question></div>
+
+    <!-- Selected code is shown here -->
+    <div>
+        <h4>Selected code:</h4>
+        <div>
+            <pre>
+                <code id="selected-code"  class="language-markup"></code>
+            </pre>
+        </div>
+    </div>
+
+    <select-button />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="http://prismjs.com/prism.js"></script>
+
+
+    <script src="questions.js"></script>
+    <script src="select-button/select-button.js"></script>
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>
