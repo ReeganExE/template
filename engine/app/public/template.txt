@@ -1,0 +1,18 @@
+
+Use JavaScript to change the HTML content of the {{= it.elName}} element to "{{= it.helloWorld}}".
+
+Hint: Use the document.getElementById() method to find the {{= it.elName}} element.
+Then, use the innerHTML property to change its HTML content.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<{{! it.tagName }} id="demo">Hi.</{{! it.tagName }}>
+
+<script>
+// Add code here
+</script>
+
+</body>
+</html>
