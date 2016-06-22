@@ -1,0 +1,15 @@
+{
+  "name": "template-engine",
+  "description": "Engine",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "csvtojson": "^0.5.14",
+    "dot": "*",
+    "express": "4.x",
+    "multer": "^1.1.0"
+  }
+}
