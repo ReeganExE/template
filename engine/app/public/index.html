@@ -30,9 +30,9 @@
                             <input type="file" id="csv" name="csv" style="display: none;">
                         </div>
                         <div "form-group" method="post" action="parse" enctype="multipart/form-data">
-                            <a href="data.json" target="_blank">Sample data.json</a>
+                            <a class="load"  load-into="json" href="data.json" target="_blank">Sample data.json</a>
                             <br/>
-                            <a href="template.txt" target="_blank">Sample template.txt</a>
+                            <a class="load" load-into="template" href="template.txt" target="_blank">Sample template.txt</a>
                         </div>
                         <button type="submit" class="btn btn-primary">Generate</button>
                     </form>
@@ -94,6 +94,18 @@
                 });
                 $output.find('code').each(function() {
                     Prism.highlightElement(this);
+                });
+            });
+
+            $('.load').click(function (e) {
+                e.preventDefault();
+                var $a = $(this);
+                var to = $a.attr('load-into'),
+                    $to = $('#' + to);
+
+                $.get(this.href).then(d => {
+                    d = $.isArray(d) ? JSON.stringify(d) : d;
+                    $to.val(d);
                 });
             });
         });
