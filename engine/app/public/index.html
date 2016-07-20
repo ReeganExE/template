@@ -5,6 +5,32 @@
     <title>Generator</title>
     <link rel="stylesheet" href="http://prismjs.com/themes/prism-okaidia.css" data-noprefix />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+    <style>
+         .dropdown-menu>li>a:hover {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #5dbdff;
+        }
+        .to-top {
+            margin-top: 5px;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        .form-control.field-name {
+            /*width: 30px;*/
+        }
+/*        .dropdown-menu>li>a:focus {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #0c6eff;
+        }*/
+    </style>
 </head>
 
 <body>
@@ -25,6 +51,35 @@
                             <label for="json">JSON Data</label>
                             <textarea type="text" name="json" class="form-control" id="json" placeholder="{}"></textarea>
                         </div>
+                        <hr/>
+
+                        <div id="fields">
+                                <div id="first-field" hidden class="input-group to-top hidden">
+                                  <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-font"></span>
+                                  </span>
+                                  <input name="fieldName" class="form-control field-name" type="text" placeholder="Field name">
+                                  <select name="dataType" class="pre-selectpicker">
+                                      <option>Integer</option>
+                                      <option>Natural</option>
+                                      <option>Word</option>
+                                      <option>Paragraph</option>
+                                      <option>Sentence</option>
+                                      <option>Date</option>
+                                      <option>Character</option>
+                                      <option>Address</option>
+                                      <option>Phone</option>
+                                      <option>City</option>
+                                      <option value="name">Person Name</option>
+                                  </select>
+                                </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 8px;">
+                            <button type="button" id="add-field" class="btn btn-primary">Add field</button>
+                            <button type="button" id="gen-json" class="btn btn-success">Generate 10 items</button>
+                        </div>
+                        <hr/>
                         <div class="form-group" method="post" action="parse" enctype="multipart/form-data">
                             <label for="csv" class="btn btn-success">Upload a CSV file</label>
                             <input type="file" id="csv" name="csv" style="display: none;">
@@ -59,9 +114,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="http://olado.github.io/doT/doT.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <script src="//cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
 
     <script type="text/javascript">
+    $.fn.nmap = [].map;
+    var $firstField, $fields;
         $(function load() {
+            $firstField = $('#first-field');
+            $fields = $('#fields');
+
             var $output = $('#output');
             var $p = $('<pre><code class="language-markup"></code></pre>');
             doT.templateSettings = {
@@ -108,7 +172,52 @@
                     $to.val(d);
                 });
             });
+
+            $('#add-field').click(function() {
+                loadFields();
+            });
+
+            $('#gen-json').click(function () {
+                var fields = $('#fields .to-top:not([hidden])').nmap(function(item) {
+                    var $d = $(item);
+                    var a = $d.find('*').serializeArray(),
+                        haha = {};
+                    _.transform(a, function(result, value) {
+                        result[value.name] = value.value;
+                    }, haha);
+                    return haha;
+                });
+
+
+                fields = _.transform(fields, function(result, value) {
+                    result[value.fieldName] = value.dataType;
+                }, {});
+
+                console.log(fields);
+
+                var jsonArr = [];
+                for (var i = 0; i < 10; i++) {
+                    var empty = {};
+                    _.forOwn(fields, function(dataType, fieldName) {
+                        empty[fieldName] = chance[dataType.toLowerCase()]();
+                    });
+                    // console.log(empty);
+                    jsonArr.push(empty);
+                }
+
+                // console.log(jsonArr);
+                $('#json').val(JSON.stringify(jsonArr, null, 4));
+            });
+
+            loadFields();
         });
+
+
+        function loadFields() {
+            var clone = $firstField.clone();
+            $fields.append(clone.prop('id', '').removeAttr('hidden').removeClass('hidden'));
+            clone.find('.pre-selectpicker').selectpicker();
+        }
     </script>
 
 </body>
