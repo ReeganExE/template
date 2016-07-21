@@ -121,6 +121,7 @@
 
     <script type="text/javascript">
     $.fn.nmap = [].map;
+    window.totalItems = 100;
     var $firstField, $fields;
         $(function load() {
             $firstField = $('#first-field');
@@ -196,7 +197,7 @@
                 console.log(fields);
 
                 var jsonArr = [];
-                for (var i = 0; i < 10; i++) {
+                for (var i = 0; i < totalItems; i++) {
                     var empty = {};
                     _.forOwn(fields, function(dataType, fieldName) {
                         empty[fieldName] = chance[dataType.toLowerCase()]();
