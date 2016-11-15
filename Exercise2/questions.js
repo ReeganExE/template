@@ -81,7 +81,8 @@
             });
 
             channel.bind("getGrade", checkAnswer);
-            channel.bind("emptyFn", emptyFn);
+            channel.bind("getState", getState);
+            channel.bind("setState", setState);
         }
     });
 
@@ -113,6 +114,17 @@ function checkAnswer() {
     return document.answered || false;
 }
 
+function getState() {
+    return JSON.stringify({
+        a: 'abc',
+        b: 10
+    });
+}
+
+
+function setState(state) {
+    console.log(arguments);
+}
 
 function emptyFn() {
     return '';
